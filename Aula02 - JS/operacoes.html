@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:: Operações ::</title>
+
+    <script type="text/javascript">
+        var idade;
+        idade = prompt('Informe a idade: ');
+
+        //EXERCÍCIO
+        /* 
+            ENQUANTO a idade informada for menor que 18,
+            exiba a mensagem "Sem permissão de acesso" e
+            solicite novamente a idade. 
+        */
+
+        while (idade < 18) {
+            idade = prompt('Sem permissão de acesso. Informe a idade: ');
+        }
+            alert('Acesso permitido!');
+
+        var aceita_termo = confirm('Você aceita os termos?');
+
+        if (aceita_termo) {
+            document.write('<b>Bem-vindo!</b>');
+        } else {
+            //document.write('Acesso não permitido!');
+            window.location.href = 'https://www.unifafibe.com.br';
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções</title>
+
+    <script type="text/javascript">
+
+        //função sem parâmetros
+        function exibirMensagem(){
+            document.write('Aula de JavaScript!');
+        }
+
+        //exibirMensagem();
+
+        //função com parâmetros
+        function escreverNaTela(mensagem){
+            document.write(mensagem);
+            document.write('<hr/>');
+        }
+
+        //como chamar a funçaõ: escreverNaTela('Olá!');
+
+        //função com retorno
+        function somar(valor1, valor2){
+            var resultado = parseInt(valor1) + parseInt(valor2);
+            return resultado;
+        }
+
+        //EXERCICIO
+        //Escrever na tela o resultado da soma de dois valores informados pelo usuário.
+        
+        var valor1 = prompt('Insira o primeiro valor: ');
+        var valor2 = prompt('Insira o segundo valor: ');
+        escreverNaTela(somar(valor1, valor2));
+
+    </script>
+    
+</head>
+<body>
+    
+</body>
+</html>

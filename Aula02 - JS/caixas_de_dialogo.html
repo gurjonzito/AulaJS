@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixas de diálogo</title>
+
+    <script type="text/javascript">
+
+        //CAIXAS DE DIÁLOGO
+
+        //1 - Alert
+        alert('Aula de JS!');
+
+        //2- PROMPT: coleta um valor do usuário
+        var idade;
+        idade = prompt('Por favor, informe sua idade: ');
+        document.write(idade);
+
+        //3- CONFIRM: retorna valor booleano
+        var retorno;
+        retorno = confirm('Você deseja acessar esta página?');
+        //alert(retorno);
+
+        //Se deseja acessar a página, apresente a mensagem "bem-vindo!"
+        //Caso contrário, apresente a mensagem "Até logo!"
+
+        if (retorno)
+        {
+            alert('Bem-vindo!');
+        } else {
+            alert('Até logo!');
+        }
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

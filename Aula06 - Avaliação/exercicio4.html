@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+
+    // Calcule o mérito de salário de um funcionário.  Os funcionários que recebem mais de 1800 reais, 
+    // terão direito a 4% de aumento, os funcionários que recebem até 1800 reais terão direito a 8% de aumento. 
+    // No final, deve-se exibir o valor do mérito no salário.
+
+    var salario = parseInt(prompt('Insira seu salário: '));
+    var aumento;
+    if (salario > 1800){
+        aumento = salario*0.04
+    }
+    else{
+        aumento = salario*0.08
+    }
+    document.write("Seu mérito é do valor de: " + aumento)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

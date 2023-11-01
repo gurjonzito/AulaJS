@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 5</title>
+
+    <script type="text/javascript">
+        // Um estudante deseja participar de uma competição de matemática. Para que sua inscrição seja aprovada, 
+        // é necessário que o estudante tenha frequência maior ou igual a 80%.  
+        // Será exibida a mensagem “Permitido” somente se a condição for satisfeita.
+
+        function conferirResultado(){
+            var frequencia = parseFloat(document.getElementById('freq').value)
+            
+
+            if (frequencia >= 80){
+            document.write('Permitido')
+            }
+        }
+
+    </script>
+
+</head>
+<body>
+    <form>
+        <p>Insira sua frequência</p>
+        <input type="text" name="frequencia" id="freq">
+    </form>
+    <button onclick='conferirResultado()'>Conferir resultado</button>
+</body>
+</html>

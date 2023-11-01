@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+
+    <script type="text/javascript">
+
+        function somar(){
+            var valor1 = parseInt(document.getElementById("valor1").value);
+            var valor2 = parseInt(document.getElementById("valor2").value);
+            var resultado = valor1 + valor2;
+            alert("O resultado é: " + resultado)
+        }
+
+        function sub(){
+            var valor1 = parseInt(document.getElementById("valor1").value);
+            var valor2 = parseInt(document.getElementById("valor2").value);
+            var resultado = valor1 - valor2;
+            alert("O resultado é: " + resultado)
+        }
+
+        function div(){
+            var valor1 = parseInt(document.getElementById("valor1").value);
+            var valor2 = parseInt(document.getElementById("valor2").value);
+            var resultado = valor1 / valor2;
+            alert("O resultado é: " + resultado)
+        }
+
+        function multi(){
+            var valor1 = parseInt(document.getElementById("valor1").value);
+            var valor2 = parseInt(document.getElementById("valor2").value);
+            var resultado = valor1 * valor2;
+            alert("O resultado é: " + resultado)
+        }
+
+    </script>
+
+</head>
+<body bgcolor="pink" text="black">
+    <form>
+        <p>
+            <font color="black" face="Arial" size="4">
+                Digite dois valores e escolha a operação:
+            </font>
+        </p>
+        <p>
+            <label>Valor 1: </label><br>
+            <input type="number" id="valor1"><br>
+        </p>
+        <p>
+            <label>Valor 2: </label><br>
+            <input type="number" id="valor2"><br>
+        </p>
+        <p>
+            <button onClick="somar()">Somar</button>
+            <button onClick="sub()">Subtrair</button>
+            <button onClick="div()">Dividir</button>
+            <button onClick="multi()">Multiplicar</button>
+        </p>
+    </form>
+</body>
+</html>

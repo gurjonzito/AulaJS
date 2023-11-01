@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 3</title>
+
+    <script type="text/javascript">
+        // O sistema deve receber a média do aluno e exibir a resposta de acordo com as seguintes condições:
+        // Nota A : 9 a 10 acertos
+        // Nota B: 7 a 8 acertos
+        // Nota C: 3 a 6 acertos
+        // Nota D: 0 a 2 acertos
+        // Mover cálculo de resultado para uma função e executar ao clicar em um botão.
+
+function apresentarResultado(){
+        var media = parseInt(document.getElementById("media").value);
+
+        if (media >= 9 && media <= 10){
+            document.write("O aluno recebeu nota A")
+        }
+        if (media >= 7 && media < 9){
+            document.write("O aluno recebeu nota B")
+        }
+        if (media >= 3 && media < 7){
+            document.write("O aluno recebeu nota C")
+        }
+        if (media >= 0 && media < 3){
+            document.write("O aluno recebeu nota D")
+        }
+    }
+
+    </script>
+
+</head>
+<body>
+
+    <input type="text" name="media" id="media"/>
+
+    <button onClick="apresentarResultado()">Apresentar resultado</button>
+</body>
+</html>

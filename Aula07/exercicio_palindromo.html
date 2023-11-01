@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilha</title>
+
+    <script type="text/javascript">
+
+        var base = 0, topo = 0;
+        const MAX = 20;
+        var pilha = [];
+
+        function verificarCheia(){
+            return (topo == MAX);
+        }
+
+        function verificarVazia(){
+            return (base == topo);
+        }
+
+        function adicionar(valor){
+            if (!verificarCheia()){
+                pilha[topo] = valor;
+                topo++; // topo = topo + 1;
+                console.log(`O valor ${valor} foi empilhado.`);
+            }else{
+                console.log('PILHA CHEIA');
+            }
+
+        }
+
+        function remover(){
+            
+            var valorRemovido;
+
+            if (!verificarVazia()){
+                valorRemovido = pilha[topo - 1]
+                topo--;
+                console.log(`O valor foi removido.`);
+                return valorRemovido;
+
+            }else{
+                console.log('PILHA VAZIA');
+                return -1;
+            }
+        }
+
+        function verificarPalindromo(){
+            var palavra = prompt('Informe a palavra:');
+
+            for (i = 0; i < palavra.length; i++){
+                 adicionar(palavra[i]);
+            }
+
+            var novaPalavra = '';
+
+            while (!verificarVazia()) {
+                novaPalavra += remover();
+            }
+            
+            if (palavra == novaPalavra){
+                console.log(`Palavra invertida: ${novaPalavra}`);
+                console.log('Palíndromo');
+            }else{
+                console.log(`Palavra invertida: ${novaPalavra}`);
+                console.log('Não é palíndromo');
+            }
+
+        }
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <form>
+        <p>
+            <label>Nome: </label>
+            <input type="text" name="nome" id="nome" />
+        </p>
+        <p>
+            <label>Senha: </label>
+            <input type="password" name="senha"/>
+        </p>
+        <p>
+            <label>Cidade: </label>
+            <input name="cidade" placeholder="Sua cidade" />
+        </p>
+        <p>
+            <label>Endereço: </label>
+            <input type="text" name="endereco" size="35" />
+        </p>
+        <p>
+            <label>Qtd. de filhos: </label>
+            <input type="text" name="filhos" maxlength="2">
+        </p>
+        <p>
+            <label>Qual o esporte favorito?</label><br/>
+            <input type="checkbox" name="esporte" value="basquete">Basquete <br/>
+            <input type="checkbox" name="esporte" value="bocha">Bocha <br/>
+            <input type="checkbox" name="esporte" value="futebol">Futebol <br/>
+            <input type="checkbox" name="esporte" value="volei">Vôlei <br/>
+        </p>
+        <p>
+            <label>Qual é o seu time?</label><br/>
+            <input type="radio" name="time" value="trikas">São Paulo <br/>
+            <input type="radio" name="time" value="inter">Internacional <br/>
+            <input type="radio" name="time" value="cruz">Cruzeiro <br/>
+        </p>
+        <p>
+            <label>Escolha um sabor: </label>
+            <select name="">
+                <option>Abacaxi</option>
+                <option>Morango</option>
+                <option>Chocolate</option>
+                <option>Creme</option>
+            </select>
+        </p>
+        <p>
+            <textarea cols="40" rows="5" name="comentario"></textarea>
+        </p>
+        <p>
+            <input type="reset" />
+            <input type="submit" value="Enviar mensagem"/>
+        </p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble Sort</title>
+
+    <script type="text/javascript">
+
+        function BubbleSort() {
+
+        var container = [11, 12, 16, 14, 10, 5, 19, 6, 15, 7];
+
+        var start = performance.now();
+
+        var temp
+
+        //vcontainereduras
+
+        for(var v = 0; v < container.length -1; v++) {
+
+
+            //percorre todas as posições para comparar valores
+            for(var ord = 0; ord < container.length -1; ord++) {
+
+                if(container[ord] > container[ord + 1])
+                {
+                    //efetuar a troca
+                    temp = container[ord + 1]
+                    container[ord + 1 ] = container[ord]
+                    container[ord] = temp
+                }
+            }
+        }
+    var end = performance.now();
+    console.log('Tempo de execução (ms): ' + (end-start))
+
+    console.log('Total de vcontainereduras: ' + v);
+
+
+    //apresentar os valores
+    for(var item of container)
+        console.log(item);
+    } //fim - BubbleSort()
+
+    function BubbleSortOtimizado(container) {
+  for (var i = 0; i < container.length - 1; i++) {
+    var troca = false;
+    for (var j = 0; j < container.length - i - 1; j++) {
+      if (container[j] > container[j + 1]) {
+        // Troca os elementos de posição
+        var temp = container[j];
+        container[j] = container[j + 1];
+        container[j + 1] = temp;
+        troca = true;
+      }
+    }
+    if (!troca) {
+      break;
+    }
+  }
+}
+
+var container = [64, 34, 25, 12, 22, 11, 90];
+BubbleSortOtimizado(container);
+console.log("Array ordenado: " + container);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -29,15 +29,54 @@
             console.log(vetor[4]); // Apresenta o valor 40
             console.log(vetor[6]); // Apresenta o valor 14
 
-            var frase = ['V','a','i','','T','i','m','ã','o','!'];
+            var frase = ['V','a','i',' ','T','i','m','ã','o','!'];
             console.log(frase[5]) // Apresenta o caractere "i"
 
-            for(var i = 0; i <= 9; i++)
+            for(var i = 0; i <= 8; i++)
             {
-                console.log(frase[i]); // Mostra todos os elementos do vetor no console
+                // console.log(frase[i]); // Mostra todos os elementos do vetor no console
                 document.write(frase[i]); // Mostra a frase na página
-
             }
+
+            document.write('<hr>')
+
+            // Vetores multidimensionais (matriz)
+            var x = [
+                [12, 17, 3, 741, 6],
+                [22, 43, 444, 94, 1],
+                [2, 66, 654, 55, 11],
+                [5, 34, 21, 41, 765],
+                [9, null, 90, 30, 0]
+            ];
+
+            console.log(x[1][2]); // Apresenta o valor 444
+            console.log(x[2][3]); // Apresenta o valor 55
+            console.log(x[2][1]); // Apresenta o valor 66
+
+            //EXERCÍCIO
+            //Apresentar todos os itens da matriz "x"
+            //Utilize o comando document.write
+
+            for(var i = 0; i <= 4; i++)
+            {
+                document.write("<br>" + x[i] + "<br>")
+            }
+
+             for(var l = 0; l <= 4; l++)
+             {
+                for(var c = 0; c <= 4; c++)
+                {
+                    document.write(x[l][c]);
+                    document.write(' | ');
+                }
+             }
+
+             document.write('<hr/>');
+
+             // foreach
+             for(var item of x)
+                document.write(item);
+
         </script>
 
     </head>

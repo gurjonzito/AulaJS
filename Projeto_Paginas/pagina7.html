@@ -7,6 +7,14 @@
     <title>Contato</title>
 </head>
 
+<script type="text/javascript">
+
+    function enviar(){
+        alert('Sua mensagem foi enviada!');
+    }
+
+</script>
+
 <body link="green" vlink="purple" text="black" bgcolor="#CCCCFF">
     <font face="Courier New" size="5">
         <h1 align="center">Contato</h1>
@@ -38,13 +46,13 @@ Telefone: (123) 456-7890
                     </p>
                     <p>
                         <label>Email:</label>
-                        <input type="text" name="email" id="email">
+                        <input type="email" name="email" id="email">
                     </p>
                     <p>
                         <textarea cols="40" rows="5" name="comentario"></textarea>
                     </p>
                     <p>
-                        <input type="submit" value="Enviar mensagem" />
+                        <button onclick="enviar()">Enviar mensagem</button>
                     </p>
                 </form>
             </td>

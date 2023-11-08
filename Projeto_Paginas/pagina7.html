@@ -10,7 +10,18 @@
 <script type="text/javascript">
 
     function enviar(){
-        alert('Sua mensagem foi enviada!');
+        if (document.getElementById('nome').value == ''){
+            alert('Preencha o nome.')
+        }
+        else if (document.getElementById('email').value == ''){
+            alert('Preencha o e-mail.')
+        }
+        else if (document.getElementById('comentario').value == ''){
+            alert('Preencha o comentário.')
+        }
+        else {
+            alert('Sua mensagem foi enviada!')
+        }
     }
 
 </script>
@@ -49,7 +60,7 @@ Telefone: (123) 456-7890
                         <input type="email" name="email" id="email">
                     </p>
                     <p>
-                        <textarea cols="40" rows="5" name="comentario"></textarea>
+                        <textarea cols="40" rows="5" name="comentario" id="comentario"></textarea>
                     </p>
                     <p>
                         <button onclick="enviar()">Enviar mensagem</button>

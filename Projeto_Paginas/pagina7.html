@@ -9,18 +9,11 @@
 
 <script type="text/javascript">
 
-    function enviar(){
-        if (document.getElementById('nome').value == ''){
-            alert('Preencha o nome.')
-        }
-        else if (document.getElementById('email').value == ''){
-            alert('Preencha o e-mail.')
-        }
-        else if (document.getElementById('comentario').value == ''){
-            alert('Preencha o comentário.')
-        }
-        else {
-            alert('Sua mensagem foi enviada!')
+    function enviar() {
+        if (document.getElementById('nome').value == '' || document.getElementById('email').value == '' || document.getElementById('comentario').value == '') {
+            alert('Por favor, preencha os campos corretamente.');
+        } else {
+            alert('Sua mensagem foi enviada!');
         }
     }
 
@@ -28,7 +21,7 @@
 
 <body link="green" vlink="purple" text="black" bgcolor="#CCCCFF">
     <font face="Courier New" size="5">
-        <h1 align="center">Contato</h1>
+        <h1 align="center"><i>Contato</i></h1>
         <p>
         <pre align="center">
 Acesse nossos principais meios de contato para solicitar
@@ -43,7 +36,7 @@ Telefone: (123) 456-7890
 
     <font face="Courier New" size="4.5">
         <p>
-        <h1 align="center">Deixe uma mensagem</h1>
+        <h1 align="center"><i>Deixe uma mensagem</i></h1>
         </p>
     </font>
 
@@ -72,7 +65,7 @@ Telefone: (123) 456-7890
 
     <font face="Courier New" size="4.5">
         <p>
-        <h1 align="center">Conecte-se conosco</h1>
+        <h1 align="center"><i>Conecte-se conosco</i></h1>
         </p>
     </font>
 

@@ -10,11 +10,24 @@
 <script type="text/javascript">
 
     function enviar() {
-        if (document.getElementById('nome').value == '' || document.getElementById('email').value == '' || document.getElementById('comentario').value == '') {
-            alert('Por favor, preencha os campos corretamente.');
+        var nome = document.getElementById('nome').value;
+        var email = document.getElementById('email').value;
+        var comentario = document.getElementById('comentario').value;
+
+        if (nome === '' || email === '' || comentario === '') {
+            alert('Por favor, preencha todos os campos corretamente.');
         } else {
-            alert('Sua mensagem foi enviada!');
+            if (validarEmail(email)) {
+                alert('Sua mensagem foi enviada!');
+            } else {
+                alert('Por favor, insira um endereço de e-mail válido.')
+            }
         }
+    }
+
+    function validarEmail(email) {
+        var arroba = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return arroba.test(email);
     }
 
 </script>
